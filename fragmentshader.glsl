@@ -1,7 +1,9 @@
 #version 130
 
-out vec4 outColor;
+in vec4 color;
+out vec4 fColor;
 
-void main(){
-    outColor = vec4(1.0, 1.0, 1.0, 1.0);
+void main () {
+	// pass through the given color
+	fColor = color;
 }
